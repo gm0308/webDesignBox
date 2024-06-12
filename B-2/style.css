@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#wrap {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #efefef;
+}
+
+.header_contain {
+    width: 1200px;
+    height: 100%;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    background-color: #d9d9d9;
+    float: left;
+}
+.logo a {
+    display: block;
+    padding: 30px 0 0 20px;
+}
+
+.menu {
+    width: 1000px;
+    height: 100%;
+    background-color: #d1d1d1;
+    float: right;
+    position: relative;
+    z-index: 999;
+}
+
+.nav {
+    float: right;
+    display: flex;
+    margin: 30px 20px 0 0;
+}
+
+.nav > li  > a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+}
+.nav > li:hover > a {
+    background-color: #737373;
+}
+
+.submenu { display: none;}
+.submenu > li > a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+}
+.submenu > li:hover > a {
+    background-color: #919191;
+}
+
+#slider {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slider ul {
+    width: 3600px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slider ul li {
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+
+
+#content {
+    width: 1200px;
+    height: 200px;
+    background-color: #d9d9d9;
+    display: flex;
+}
+
+#content>div {
+    width: 400px;
+    height: 100%;
+}
+
+.items1 {
+    background-color: #bcbcbc;
+}
+
+.tab {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.tab > ul {
+    display: flex;
+    text-align: center;
+}
+.tab li {
+    width: 200px;
+}
+.on {
+    background-color: #e1e1e1;
+}
+
+.content {
+    width: 100%;
+    height: 160px;
+}
+
+.notice ul {
+    padding-top: 3px;
+}
+.notice li {
+    cursor: pointer;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.notice li:hover {
+    text-decoration: underline;
+}
+.notice span {
+    float: right;
+}
+
+.gallery {display: none;}
+.gallery ul {
+    padding-top: 30px;
+    display: flex;
+}
+.gallery li:hover {
+    opacity: 0.5;
+}
+
+.items2 {
+    background-size: 400px 200px;
+    background-color: #b1b1b1;
+    background-image: url('https://koseongmin1.github.io/DehanTour/image/slide/slide2.jpg');
+}
+.items2 h1 {
+    margin: 65px 0 0 150px;
+    color: white;
+}
+
+.ban-btn {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 150px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.ban-btn:hover {
+    background-color: black;
+}
+
+.items3 {
+    background-size: 400px 200px;
+    background-color: #a3a3a3;
+    background-image: url('https://www.wiseperson.co.kr/news/photo/202310/6004_7405_1050.jpg');
+}
+.items3 h1 {
+    margin: 65px 0 0 130px;
+    color: white;
+}
+
+.cut-btn {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 150px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.cut-btn:hover {
+    background-color: black;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #d1d1d1;
+}
+
+.footer_contain {
+    width: 1200px;
+    height: 100%;
+}
+
+.f-left {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #9d9d9d;
+}
+.f-left a {
+    display: block;
+    padding: 30px 0 0 20px;
+}
+
+.f-right {
+    float: right;
+    width: 1000px;
+    height: 100%;
+}
+
+.copy {
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    background-color: #929292;
+    padding-left: 20px;
+}
+
+.sns {
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    background-color: #838383;
+}
+.sns ul {
+    font-size: 15px;
+    display: flex;
+}
+.sns a:hover {
+    text-decoration: underline;
+}
+
+#pop {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    padding: 30px;
+    top: 15%;
+    left: 22.5%;
+    width: 800px;
+    height: 450px;
+    background-color: white;
+    border-radius: 35px;
+}
+#pop.active {
+    display: block;
+}
+
+.popTitle {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.popBody {
+    margin-top: 20px;
+}
+
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: black;
+}
