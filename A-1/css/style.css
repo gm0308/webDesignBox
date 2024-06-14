@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    height: 650px;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+}
+.logo {
+    width: 200px;
+    float: left;
+    height: 100%;
+}
+.logo a {
+    margin: 0vh 6.5vh;
+    line-height: 100px;
+}
+
+.menu {
+    width: 1000px;
+    height: 100%;
+    float: right;
+}
+
+.nav {
+    display: flex;
+    float: right;
+}
+.nav > li > a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    margin-top: 5.3vh
+}
+.nav > li:hover > a {
+    background-color: black;
+    color: white;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+}
+.submenu > li > a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.submenu > li:hover > a {
+    background-color: #ccc;
+}
+
+#container {
+    width: 100%;
+    height: 550px;
+    background-color: #a1a1a1;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+.sliderwrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+.s1 {
+    background-color: red;
+}
+.s2 {
+    background-color: blue;
+}
+.s3 {
+    background-color: yellow;
+}
+
+.content {
+    width: 100%;
+    height: 250px;
+    background-color: #d1d1d1;
+    display: flex;
+}
+.content > div {
+    width: 33.3%;
+    height: 100%;
+}
+
+.tab {
+    display: flex;
+}
+.tab > div {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.ntab {
+    background-color: black;
+}
+.ntab a {
+    color: white;
+}
+
+.gtab {
+    background-color: white;
+}
+
+.notice, .gallery {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    padding: 1vh;
+}
+
+.notice > li{
+    display: flex;
+    width: 100%;
+    line-height: 42px;
+    border-bottom: 1px solid #ccc;
+}
+.notice li p {
+    float: left;
+    width: 60%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+.notice span {
+    float: right;
+    width: 30%;
+}
+
+.gallery {
+    display: none;
+}
+.gallery ul {
+    display: flex;
+    margin-top: 4.5vh;
+    margin-left: 2vh;
+    gap: 2vh;
+}
+.gallery img:hover {
+    opacity: 0.6;
+}
+
+.banner {
+    position: relative;
+    background-size: 100% 250px;
+    background-image: url('https://cdn.mediatoday.co.kr/news/photo/202402/316275_443634_08.jpg');
+}
+
+.banner span {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.banner span:hover > a {
+    border-radius: 15px;
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.shortcut div{
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: blue;
+    margin: 2.7vh 4.5vh;
+    cursor: pointer;
+    color: white;
+}
+.shortcut div:hover {
+    background-color: skyblue;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: #e1e1e1;
+}
+
+.f-logo {
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+.f-logo h1 {
+    padding: 2.5vh 7vh;
+}
+
+.copyright {
+    float: right;
+    width: 1000px;
+    height: 100%;
+    line-height: 100px;
+    padding-left: 2vh;
+}
+
+#pop {
+    background-color: white;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 2vh;
+    display: none;
+}
+
+.title {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.body {
+    position: relative;
+    padding-top: 1vh;
+    width: 100%;
+    height: 230px;
+}
+.btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
